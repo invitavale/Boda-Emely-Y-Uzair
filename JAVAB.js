@@ -101,7 +101,7 @@ function updateMusicIcon() {
 
 // Countdown
 function initializeCountdown() {
-    const targetDate = new Date('2026-10-24T15:30:00-04:00').getTime();
+    const targetDate = new Date('2026-10-24T16:00:00-04:00').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();
