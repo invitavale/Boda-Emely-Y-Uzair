@@ -325,9 +325,10 @@ function fallbackCopy(text, done) {
 }
 
 function confirmAttendance() {
-    // Ejemplo: aquí se debe colocar el enlace real al formulario de Google Forms.
-    // window.open('https://forms.google.com/...', '_blank');
-    showToast("Confirmar asistencia", "Aquí irá el enlace a tu formulario de Google Forms (ejemplo).");
+    // Confirmación por WhatsApp al 809-439-4970 con mensaje ya escrito
+    const phone = '18094394970';
+    const message = '¡Hola! Confirmo mi asistencia a la boda de Emely & Uzair el sábado 24 de octubre de 2026. ¡Muchas gracias por la invitación!';
+    window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(message), '_blank');
 }
 
 // Sistema de Toast

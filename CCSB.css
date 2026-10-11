@@ -2348,3 +2348,20 @@ html body .content > section:nth-of-type(even) .btn-wedding:not(.party-card .btn
 }
 .btn-copy:hover { background: var(--t-terracota-oscuro); }
 .btn-copy:focus-visible { outline: 2px solid var(--t-dorado); outline-offset: 3px; }
+
+/* ---------- Confirmación por WhatsApp (colores de la invitación) ---------- */
+.rsvp-container .wa-icon {
+    order: 2;
+    width: 76px; height: 76px;
+    margin: 0 auto 1.75rem;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: #fff;
+    color: var(--t-terracota);
+    box-shadow: 0 0 0 4px var(--t-terracota), 0 0 0 5px var(--t-dorado-claro), 0 12px 26px -12px rgba(0,0,0,0.45);
+}
+.rsvp-container .btn-wa { order: 3; display: inline-flex; align-items: center; gap: 0.55rem; }
+.rsvp-container .btn-wa .wa-btn-icon { flex: none; }
+
+/* Sin filete dorado a los lados de las secciones */
+html body .content > section::before, html body .content > section::after { display: none !important; border: none !important; }
